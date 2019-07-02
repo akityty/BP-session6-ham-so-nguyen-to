@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    // boolean isPrime(int number)
+    function isPrime(num) {
+        if(num<2){
+            return false;
+        }
+        for(let i=2; i<Math.sqrt(num);i++){
+            if(num%i===0)
+                return false;
+        }
+        return true;
+    }
+    let kt = isPrime(1);
+    if(!kt) console.log("không là số nguyên tố");
+    else  console.log("là số nguyên tố");
+
+</script>
+
+</body>
+</html>
